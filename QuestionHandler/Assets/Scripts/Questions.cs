@@ -6,18 +6,19 @@ using System.Xml;
 using System.IO;
 [XmlRoot]
 public class Questions : MonoBehaviour {
+
     
     [XmlElement]
     public List<Question> questions = new List<Question>();
 
     [XmlIgnore]
-    private string addQuestionURL = "http://hazlett206.ddns.net/QuestionManager/AddQuestion.php",
-    getQuestionsURL = "http://hazlett206.ddns.net/QuestionManager/GetQuestions.php",
-    getQuestionURL = "http://hazlett206.ddns.net/QuestionManager/GetQuestion.php",
-    getQuestionsXMLURL = "http://hazlett206.ddns.net/QuestionManager/GetQuestionsXML.php",
-    addQuestionsXMLURL = "http://hazlett206.ddns.net/QuestionManager/AddQuestions.php",
-    getCategoriesURL = "http://hazlett206.ddns.net/QuestionManager/GetCategories.php",
-    sendCategoriesURL = "http://hazlett206.ddns.net/QuestionManager/SetCategories.php",
+    private string addQuestionURL = "http://hazlett206.ddns.net/Erin/AddQuestion.php",
+    getQuestionsURL = "http://hazlett206.ddns.net/Erin/GetQuestions.php",
+    getQuestionURL = "http://hazlett206.ddns.net/Erin/GetQuestion.php",
+    getQuestionsXMLURL = "http://hazlett206.ddns.net/Erin/GetQuestionsXML.php",
+    addQuestionsXMLURL = "http://hazlett206.ddns.net/Erin/AddQuestions.php",
+    getCategoriesURL = "http://hazlett206.ddns.net/Erin/GetCategories.php",
+    sendCategoriesURL = "http://hazlett206.ddns.net/Erin/SetCategories.php",
     message = "";
     [XmlIgnore]
     private Questions instance;
@@ -31,6 +32,7 @@ public class Questions : MonoBehaviour {
     private int loading = 0;
     [XmlIgnore]
     private float timer = 0;
+    private Vector2 scroll = new Vector2();
     private bool saving = false, loaded = false, load = false;
     public Questions() { }
 	
@@ -109,6 +111,7 @@ public class Questions : MonoBehaviour {
 
         GUILayout.Space(10.0f);
         GUILayout.Label("<b>QUESTIONS</b>\nClick to select/modify");
+        scroll = GUILayout.BeginScrollView(scroll);
         GUILayout.BeginHorizontal();
         Question remove = null;
         foreach (Question q in questions)
@@ -129,6 +132,8 @@ public class Questions : MonoBehaviour {
             questions.Remove(remove);
         }
         GUILayout.EndHorizontal();
+
+        GUILayout.EndScrollView();
         GUILayout.Space(10.0f);
         GUILayout.Label("QUESTION ID/NAME");
         current.ID = GUILayout.TextField(current.ID);
