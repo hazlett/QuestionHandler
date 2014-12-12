@@ -10,16 +10,24 @@ public class Question {
     [XmlAttribute]
     public string QuestionText = "";
     [XmlAttribute]
-    public string Category = "";
+    public string Category = "0";
     [XmlElement]
-    public List<string> Tags = new List<string>();
+    public List<string> WrongAnswers = new List<string>();
+    [XmlAttribute]
+    public string CorrectAnswer = "";
 
     public Question() { }
-    public Question(string text, string category, List<string> tags)
+    public Question(int wrongAnswers)
+    {
+        for (int i = 0; i < wrongAnswers; i++)
+        {
+            WrongAnswers.Add("");
+        }
+    }
+    public Question(string text, string category)
     {
         QuestionText = text;
         Category = category;
-        Tags = tags;
     }
     public string ToXml()
     {

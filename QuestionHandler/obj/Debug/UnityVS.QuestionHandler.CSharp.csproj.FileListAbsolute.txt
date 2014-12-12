@@ -1,0 +1,11 @@
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\obj\Debug\UnityVS.QuestionHandler.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\obj\Debug\Assembly-CSharp.dll
+C:\Users\hazle_000\Documents\GitHub\QuestionHandler\QuestionHandler\obj\Debug\Assembly-CSharp.pdb
